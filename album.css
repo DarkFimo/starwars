@@ -1,4 +1,54 @@
 .titre
 {
 	font-size: 30px;
+	text-align: center;
+	text-decoration: underline;
+	font-family: 'Oswald';
+	color: #1E9C54;
+}
+
+h3
+{
+	font-style: black;
+	color: #FFFF00;
+	text-shadow : 5px 5px 8px black;
+	font-family: Lobster, cursive;
+	font-size: 25px;
+}
+
+body
+{
+	min-height: 100%;
+	background-color: #8CF7FF;
+	position: relative;
+}
+.item
+{
+
+	margin : 15px;
+	
+	text-align: center;
+	height: 400px;
+	
+}	 
+
+img
+{
+	display: inline-block;
+	vertical-align : center;
+}
+
+p
+{	
+	text-shadow : 5px 5px 8px black;
+	color : #FFFF00;
+	text-align: center;
+	font-family: Lobster;
+	font-size: 20px;
+}
+
+footer
+{
+	margin-top: 75px;
+	text-align: center;
 }

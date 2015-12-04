@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<meta charset="UTF-8">
 	<title>Une histoire pour enfant.</title>
 
@@ -11,10 +13,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
 
   <link rel="stylesheet" href="album.css">
+
 </head>
+
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <body>
 	
-	<div >Lorem ipsum dolor sit amet</div>
+	<div class = "titre">Voir le monde avec tes yeux d'enfant</div>
 
 <div class="container">
   <br>
@@ -25,43 +30,66 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
-<!-- ATTENTION ICI LES TRUCS A CHANGER -->
-    <!-- Wrapper for slides -->
+
+
+
     <div class="carousel-inner" role="listbox">
 
-      <div class="item active"> <!-- Objet affiché du slider --> 
-        <img src="pollution.jpeg" alt="pollution" width="460" height="345">
+      <div class="item active"> 
+        
+
         <div class="carousel-caption">
-          <h3>La pollution</h3> <!--image titre de l'objet et description -->
-          <p>Fais attention à la planète ! </p>
+        	<img src="violence.png" alt="Violence" width="460">
+          <h3>Appelle le 119</h3> <!--image titre de l'objet et description -->
+          <p>Si tu subis des violences à la maison.</p>
         </div>
       </div>
 
-      <div class="item"> <!-- Objet suivant -->
-        <img src="img_chania2.jpg" alt="Chania" width="460" height="345">
+     <div class="item"> <!-- encore un -->
         <div class="carousel-caption">
-          <h3>Chania</h3> <!--image titre de l'objet et description -->
-          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        	<img src="poubelle.png" alt="pollution" width="460" >
+          <h3>La pollution détruit la planète</h3> 
+          <p>Ne laisse pas trainer tes déchets ! </p>
         </div>
       </div>
-    
-      <div class="item"> <!-- encore un -->
-        <img src="img_flower.jpg" alt="Flower" width="460" height="345">
+
+      <div class="item">
         <div class="carousel-caption">
-          <h3>Flowers</h3> <!--image titre de l'objet et description -->
-          <p>Beatiful flowers in Kolymbari, Crete.</p>
+        <img src="pedobear.png" alt="Pedobear" width="460" >
+          <h3>Tout le monde n'est pas gentil !</h3> 
+          <p>Méfie toi des inconnus.</p>
         </div>
       </div>
+     	
 
       <div class="item"> <!-- et encore -->
-        <img src="img_flower2.jpg" alt="Flower" width="460" height="345">
+        
         <div class="carousel-caption">
-          <h3>Flowers</h3>
-          <p>Beatiful flowers in Kolymbari, Crete.</p>
+         <img src="ratquetteur.png" alt="Agression" width="460" > 
+         <h3>Ne laisse pas les méchants t'embêter</h3>
+          <p>Préviens un adulte qui pourra t'aider.</p>
         </div>
       </div>
-  
+
+     
+        
+
+      <div class="item"> <!-- et encore -->
+        
+        <div class="carousel-caption">
+         <img src="terre(1).png" alt="Terre" width="460" > 
+         <h3>La terre est malade.</h3>
+          <p>Les catastrophes naturelles sont les symptomes.</p>
+        </div>
+      </div>
+
+
+   
+
+
+
     </div>
 
     <!-- Left and right controls -->
@@ -76,7 +104,31 @@
   </div>
 </div>
 
+<script>
+  // le script peut être ajouter par fichier de la meme maniere que poru l'api jquery
+  //Konami code 
+var k = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]; //valeurs des touches à presser
+var n = 0; //compteur de touches pressées
+$(document).keydown(function (e) // catch les events claviers
+{
+  if (e.keyCode === k[n++]) //si la touche pressé correspond a la case n du tableau
+  {
+    if (n === k.length) //si on a parcouru tout le tableau
+    {
+      // ici
+      // le
+      alert('Konami !!!'); 
+      // code
+      // à
+      // executer
+      n = 0; //remise a 0;
+    }
+  }
+  else
+      n = 0; //sinon remise a 0
+});
+</script>
 
-<footer> <a href="jesaispasl'url"> home</a></footer>
+<footer> <a href="index3.html"> home</a></footer>
 </body>
 </html>
