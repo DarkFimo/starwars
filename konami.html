@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Un super titre</title>
+
+</head>
+  <!-- API pour le Carousel -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<body>
+  <!-- 
+
+
+
+ICI LE BODY HTML
+
+   -->
+
+<!-- Le carousel -->
+
+
+<script>
+  // le script peut être ajouter par fichier de la meme maniere que poru l'api jquery
+  //Konami code 
+var k = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]; //valeurs des touches à presser
+var n = 0; //compteur de touches pressées
+$(document).keydown(function (e) // catch les events claviers
+{
+  if (e.keyCode === k[n++]) //si la touche pressé correspond a la case n du tableau
+  {
+    if (n === k.length) //si on a parcouru tout le tableau
+    {
+      // ici
+      // le
+      alert('Konami !!!'); 
+      // code
+      // à
+      // executer
+      n = 0; //remise a 0;
+    }
+  }
+  else
+      n = 0; //sinon remise a 0
+});
+</script>
+
+</body>
+</html>
